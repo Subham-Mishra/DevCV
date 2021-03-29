@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import Typed from 'react-typed';
 import Particles from "./Particles";
 import { name, aboutMe } from '../../UserData/info.js';
 import '../../Styles/headerButtonAnimation.scss';
-import '../../Styles/styles.scss';
 
+const Wrapper = styled.div`
+    height: 150vh;
+`;
 
 const Container = styled.div`
     position: absolute;
-    top: 35%;
-    left: 10%;
+    top: 25rem;;
+    left: 5rem;;
     z-index: 9999;
 `;
 
@@ -28,19 +31,26 @@ const Br = styled.br``;
 const Button = styled.a``;
 
 
-export default Header = () => { 
+export default Header = () => {
     return (
-    <>
-        <Particles />
-        <Container>
-            <Heading>Hi, My name is <Span>{name}</Span>.<Br />{aboutMe[0]}</Heading>
-            <Br />
-            <Button
-                className='buttonfx slideleft'
-                onClick={() => { console.log('Clicked') }}>
-                Know more about me!
+        <Wrapper>
+            <Particles />
+            <Container>
+                <Heading> Hi, My name is <Span>{name}.</Span>
+                    <Br />
+                    <Typed
+                        strings={aboutMe}
+                        typeSpeed={30}
+                        loop
+                    />
+                </Heading>
+                <Br />
+                <Button
+                    className='buttonfx slideleft'
+                    onClick={() => { console.log('Clicked') }}>
+                    Know more about me!
             </Button>
-        </Container>
-    </>
-
-)};
+            </Container>
+        </Wrapper>
+    )
+};
