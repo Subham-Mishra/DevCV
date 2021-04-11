@@ -23,13 +23,21 @@ const Wrapper = styled.div`
   background: purple;
   color: white;
   height: 100vh;
-  padding: 10rem 20rem;
-  display: flex;
+  width: 100%;
+  padding: 10rem 8rem;
+  display: inline-block;
   justify-content: space-between;
   white-space: nowrap;
 `;
 
-const Div = styled.div``;
+const LeftDiv = styled.div`
+  float: left;
+`;
+
+const RightDiv = styled.div`
+  margin-top: 10%;
+  float: right;
+`;
 
 const FormDiv = styled.div`
   background-color: white;
@@ -48,7 +56,7 @@ export default Contact = () => {
   const classes = useStyles();
   return (
     <Wrapper>
-      <Div>
+      <LeftDiv>
         <FormDiv>
           <Form noValidate autoComplete="off">
             <TextField
@@ -92,14 +100,14 @@ export default Contact = () => {
             </Button>
           </Form>
         </FormDiv>
-      </Div>
-      <Div>
+      </LeftDiv>
+      <RightDiv>
         <Para>
           Have a Query <br />
           or
           <br /> Wanna say something?
         </Para>
-      </Div>
+      </RightDiv>
     </Wrapper>
   );
 };

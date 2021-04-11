@@ -55,6 +55,7 @@ export default Connect = () => {
         <Wrapper>
         <Break />
             <TiltedDiv>
+                <Break/>
                 <Heading>Let's Connect...</Heading>
                 <Block>
                     <Div>

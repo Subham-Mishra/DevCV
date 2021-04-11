@@ -10,14 +10,22 @@ const Wrapper = styled.div`
 `;
 
 const Rights = styled.div`
-    font-size:1rem;
+    font-size:1.5rem;
     color: white;
-
+    text-align: center;
+    min-height: 25vh;
 `;
 
 export default Footer = () => (
     <Wrapper>
-    Made with React MaterialUI Passion and Love. 
-    <Rights>2021. No Rights Reserved. Tweak the code and have fun.</Rights>
+        <Rights> Made with React MaterialUI Passion and Love.
+            <br />
+            © March, 2021. No Rights Reserved.
+            <br />
+            Tweak the code and have fun.
+            <br />
+            <button> Fork my repo for this portfolio.</button>
+        </Rights>
+
     </Wrapper>
 );
