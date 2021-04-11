@@ -21,8 +21,8 @@ export default () => (
   SVGS */}
     <Header />
     <AboutMe />
-    <Projects />
     <Connect />
+    <Projects />
     <Contact />
     <Footer />
   </>
