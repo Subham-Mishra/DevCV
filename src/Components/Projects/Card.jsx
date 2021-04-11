@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Avatar from '@material-ui/core/Avatar';
+import Chip from '@material-ui/core/Chip';
 
 const CardDiv = styled.div`
   margin: 30px 20px;
@@ -37,7 +39,7 @@ export default Card = ({ title, desc, link, stack }) => (
             <br />
             <div>
                 {stack.map((eachStack, i) => (
-                    <button key={i}>{eachStack}</button>
+                    <Chip color="primary" variant="outlined" size="small" avatar={<Avatar>{eachStack[0]}</Avatar>} label={eachStack}/>
                 ))}
             </div>
             <Anchor><a href={link}>Check it out!</a></Anchor>

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from '@material-ui/core/Button';
+import SystemUpdateAltIcon from '@material-ui/icons/SystemUpdateAlt';
 
 const Wrapper = styled.div`
     background-color: #1e6f5c;
@@ -24,7 +26,10 @@ export default Footer = () => (
             <br />
             Tweak the code and have fun.
             <br />
-            <button> Fork my repo for this portfolio.</button>
+            <Button
+                variant="contained"
+                size="small"
+                startIcon={<SystemUpdateAltIcon />}> Fork my repo for this portfolio.</Button>
         </Rights>
 
     </Wrapper>
