@@ -24,8 +24,8 @@ export default () => (
     <Header />
     <AboutMe />
     <Connect />
-    <Skills />
     <Projects />
+    <Skills />
     <Education />
     <Contact />
     <Footer />
