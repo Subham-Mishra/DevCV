@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Wrapper = styled.div`
-  margin-top: 50vh;
+  ${'' /* margin-top: 50vh; */}
   background: purple;
   color: white;
   height: 100vh;

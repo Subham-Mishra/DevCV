@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Card from './Card';
 
 const Wrapper = styled.div`
+    padding-top:2rem;
 `;
 
 const Heading = styled.h1`

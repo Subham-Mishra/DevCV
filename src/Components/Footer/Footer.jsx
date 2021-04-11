@@ -18,7 +18,7 @@ const Rights = styled.div`
 
 export default Footer = () => (
     <Wrapper>
-        <Rights> Made with React MaterialUI Passion and Love.
+        <Rights> Made with React, MaterialUI, ❤️ and passion.
             <br />
             © March, 2021. No Rights Reserved.
             <br />
