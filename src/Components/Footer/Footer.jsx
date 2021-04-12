@@ -42,11 +42,13 @@ export default Footer = () => (
                 Designed and developed by : SUBHAM MISHRA<br />
                 Computer Science & Engineering, CET Bhubaneshwar<br />
                 imsubham882@gmail.com<br />
-                Phone No :- 8018821596<br />
+                Phone No :- 8018821596<br /><br />
                 <Button
                     variant="contained"
                     size="small"
-                    startIcon={<SystemUpdateAltIcon />}> Fork my repo for this portfolio.</Button>
+                    href="http://github.com/subham-mishra"
+                    target="_blank"
+                    startIcon={<SystemUpdateAltIcon />}> Follow me on Github!</Button>
             </RightDiv>
         </Rights>
 

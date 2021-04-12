@@ -17,6 +17,8 @@
     "react-circular-progressbar": "*",
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.4.1",
+    "react-scroll-to-component": "*",
+    "react-tiny-fab": "*",
     "react-typed": "^1.2.0",
     "react-vertical-timeline-component": "*",
     "styled-components": "^5.2.1"

@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 import Particles from "./Particles";
 import { name, aboutMe } from '../../UserData/info.js';
 import '../../Styles/headerButtonAnimation.scss';
-
+import Resume from 'url:../../../public/Subham_Mishra_2021_CSE_CET_Resume.pdf'
 const Wrapper = styled.div`
     height: 100vh;
     postion:relative;
@@ -33,6 +33,8 @@ const Span = styled.span`
 const Br = styled.br``;
 
 const Button = styled.a`
+    text-decoration: none;
+    color:black;
 `;
 
 
@@ -54,7 +56,8 @@ export default Header = () => {
                 <Br />
                 <Button
                     className='buttonfx slideleft'
-                    onClick={() => { console.log('Clicked') }}>
+                    // onClick={() => { console.log('Clicked') }}>
+                    href={Resume}   target="_blank" download>
                     Know more about me!
                 </Button>
             </Container>
