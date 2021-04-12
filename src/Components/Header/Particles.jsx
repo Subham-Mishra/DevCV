@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Particles from "react-particles-js";
 
 export default class Canvas extends Component {
-  state = { width: "100%", height: "150vh" };
+  state = { width: "100%", height: "100vh" };
 
   render() {
     const { width, height } = this.state;

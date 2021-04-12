@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  margin-top: -50vh;
-  clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
+  ${'' /* clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%); */}
   text-align: center;
   background: linear-gradient(135deg, #02aab0, #00cdac);
-  height: 160vh;
+  min-height: 100vh;
 `;
 
 const Block = styled.div`
@@ -17,21 +16,21 @@ const Block = styled.div`
 `;
 
 const Div = styled.div`
-    margin-top: 5rem;
+    margin-top: 4rem;
 `;
 
 const TiltedDiv = styled.div`
-  margin: 5rem;
-  transform: rotate(-5deg);
+  margin: 1rem;
+  ${'' /* transform: rotate(-5deg);
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); */}
   `;
 
 const Break = styled.div`
-    min-height: 12rem;
+    min-height: 4em;;
 `;
 
 const SocialIconSpan = styled.a`
@@ -53,18 +52,15 @@ const Para = styled.p`
 export default Connect = () => {
     return (
         <Wrapper>
-        <Break />
+            <Break />
             <TiltedDiv>
-                <Break/>
                 <Heading>Let's Connect...</Heading>
                 <Block>
                     <Div>
-                        <Para>Lets meet for a secret discussion. My Current Location</Para>
+                        <Para>Lets meet for a secret discussion. <br />My Current Location : </Para>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.6050543299866!2d85.77591911547249!3d20.275207986411463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7f7470b0751%3A0x935f1c8820fad9fd!2sRHR%20Boys&#39;%20Hostel%20CET%20Campus!5e0!3m2!1sen!2sin!4v1617022558906!5m2!1sen!2sin"
-                            width="800"
-                            height="500"
-                            style={{ border: 0, margin: "2rem" }}
+                            style={{ border: 0, margin: "2rem", height: "400px", width: "600px" }}
                             loading="lazy"
                         ></iframe>
                     </Div>
@@ -97,6 +93,7 @@ export default Connect = () => {
                     </Div>
                 </Block>
             </TiltedDiv>
+            <Break />
         </Wrapper>
     )
 };

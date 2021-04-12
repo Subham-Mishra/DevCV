@@ -6,7 +6,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import StarsIcon from '@material-ui/icons/Stars';
 
 const Wrapper = styled.div`
-    background-color:#1e6f5c;
+    background-color:#2a7886;
     padding: 5rem 5rem;;
 `;
 
@@ -22,22 +22,22 @@ export default Education = () => (
         <VerticalTimeline >
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentStyle={{ background: '#e8687b', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  #e8687b' }}
                 date="2017-2021"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                iconStyle={{ background: '#01a9b4', color: '#fff' }}
                 icon={<SchoolIcon />}>
-                <h3 className="vertical-timeline-element-title">College of Engineering and Technology, Bhubaneswar</h3>
+                <h3 className="vertical-timeline-element-title">College of Engineering & Technology, Bhubaneswar</h3>
                 <h4 className="vertical-timeline-element-subtitle">BTech in Computer Science & Engineering  </h4>
                 <p>CGPA: - 8.62 (Till 7th Semester)</p>
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentStyle={{ background: '#e8687b', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  #e8687b' }}
                 date="2015-2017"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                iconStyle={{ background: '#d9455f', color: '#fff' }}
                 icon={<SchoolIcon />}>
                 <h3 className="vertical-timeline-element-title">DAV Public School, Chandrasekharpur, Bhubaneswar</h3>
                 <h4 className="vertical-timeline-element-subtitle">12th from CBSE Board </h4>
@@ -46,10 +46,10 @@ export default Education = () => (
 
             <VerticalTimelineElement
                 className="vertical-timeline-element--education"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentStyle={{ background: '#e8687b', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  #e8687b' }}
                 date="2015"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                iconStyle={{ background: '#01a9b4', color: '#fff' }}
                 icon={<SchoolIcon />}>
                 <h3 className="vertical-timeline-element-title">St. Mary's School, Jajpur Road</h3>
                 <h4 className="vertical-timeline-element-subtitle">Matriculation from ICSE Board </h4>
@@ -58,7 +58,7 @@ export default Education = () => (
 
 
             <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                iconStyle={{ background: '#d9455f', color: '#fff' }}
                 icon={<StarsIcon />}
             />
         </VerticalTimeline>

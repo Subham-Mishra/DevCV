@@ -6,16 +6,20 @@ import { name, aboutMe } from '../../UserData/info.js';
 import '../../Styles/headerButtonAnimation.scss';
 
 const Wrapper = styled.div`
-    height: 150vh;
+    height: 100vh;
+    postion:relative;
 `;
 
 const Container = styled.div`
     position: absolute;
-    top: 25rem;;
-    left: 5rem;;
-    z-index: 9999;
+    top: 35%;
+    left: 5rem;
 `;
 
+const HeadDiv = styled.div`
+    min-height: 35vh;
+
+`;
 const Heading = styled.h1`
     font-size: 3rem;
 `;
@@ -28,7 +32,8 @@ const Span = styled.span`
 
 const Br = styled.br``;
 
-const Button = styled.a``;
+const Button = styled.a`
+`;
 
 
 export default Header = () => {
@@ -36,20 +41,22 @@ export default Header = () => {
         <Wrapper>
             <Particles />
             <Container>
-                <Heading> Hi, My name is <Span>{name}.</Span>
-                    <Br />
-                    <Typed
-                        strings={aboutMe}
-                        typeSpeed={30}
-                        loop
-                    />
-                </Heading>
+                <HeadDiv>
+                    <Heading> Hi, My name is <Span>{name}.</Span>
+                        <Br />
+                        <Typed
+                            strings={aboutMe}
+                            typeSpeed={30}
+                            loop
+                        />
+                    </Heading>
+                </HeadDiv>
                 <Br />
                 <Button
                     className='buttonfx slideleft'
                     onClick={() => { console.log('Clicked') }}>
                     Know more about me!
-            </Button>
+                </Button>
             </Container>
         </Wrapper>
     )

@@ -19,12 +19,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Wrapper = styled.div`
-  ${'' /* margin-top: 50vh; */}
-  background: purple;
+  background: #db6778;
   color: white;
-  height: 100vh;
+  min-height: 80vh;
   width: 100%;
-  padding: 10rem 8rem;
+  padding: 8rem 8rem;
   display: inline-block;
   justify-content: space-between;
   white-space: nowrap;
@@ -35,7 +34,7 @@ const LeftDiv = styled.div`
 `;
 
 const RightDiv = styled.div`
-  margin-top: 10%;
+  margin-top: 6%;
   float: right;
 `;
 
@@ -45,7 +44,7 @@ const FormDiv = styled.div`
 `;
 
 const Form = styled.form`
-  padding: 5rem;
+  padding: 2rem;
 `;
 
 const Para = styled.p`
